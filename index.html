@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartVerdict AI - Diagnóstico de Electrodomésticos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔧 SmartVerdict AI</h1>
+            <p>Diagnóstico inteligente de electrodomésticos</p>
+        </header>
+
+        <div class="chat-box" id="chat">
+            <div class="message bot">
+                <p>👋 Hola! Describe el problema de tu electrodoméstico</p>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Ej: Mi nevera no enfría..."
+                maxlength="500"
+            >
+            <button onclick="enviarMensaje()">Enviar</button>
+        </div>
+
+        <p class="info">Consultas restantes: <span id="consultas">3</span></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
